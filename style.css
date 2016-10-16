@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300i,400");
+* {
+  color: #333333;
+  font-family: Montserrat, sans-serif; }
+  * .container {
+    padding: 0 7%;
+    width: 100%; }
+  * h1, * h2 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; }
+  * h2 {
+    text-align: center;
+    margin: 0 auto;
+    color: #333333; }
+  * .text {
+    color: #999999;
+    text-align: center;
+    padding: 10px 15%;
+    font-family: Roboto, sans-serif; }
+  * p {
+    color: #999999;
+    font-family: Roboto, sans-serif; }
+  * a {
+    color: inherit; }
+  * a:hover {
+    text-decoration: none; }
+  * .line {
+    margin: 35px auto;
+    width: 50px;
+    height: 2px;
+    background: #f38181; }
+  * .title {
+    display: block;
+    margin: 100px auto 25px auto; }
+
+header {
+  width: 100%;
+  height: 100%;
+  background: url("img/bg1.png") 50% 50% no-repeat;
+  background-size: cover;
+  padding: 10px auto; }
+  header .navbar {
+    background: none;
+    border: none; }
+    header .navbar .logo {
+      width: 70px; }
+    header .navbar .navbar-right li {
+      font-family: Montserrat, sans-serif;
+      text-transform: uppercase; }
+      header .navbar .navbar-right li a {
+        color: white; }
+      header .navbar .navbar-right li a:hover {
+        color: #fce38a; }
+    header .navbar .navbar-right li:nth-child(6) a {
+      width: 52px; }
+    header .navbar .navbar-right li:nth-child(6) img {
+      width: 20px; }
+    header .navbar .navbar-right li:nth-child(7) a {
+      width: 52px; }
+    header .navbar .navbar-right li:nth-child(7) img {
+      width: 20px; }
+  header .h2 {
+    margin: 150px auto 10px auto; }
+  header img {
+    width: 25%;
+    display: block; }
+  header h1 {
+    margin: 0 auto 40px auto;
+    text-align: center;
+    width: 50%;
+    font-size: 7em;
+    color: white; }
+  header .line {
+    background: white; }
+  header .button {
+    display: block;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    border: 3px solid white;
+    color: white;
+    margin: 50px auto;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-family: Montserrat, sans-serif; }
+  header .points {
+    margin: 100px auto 10px auto; }
+    header .points .item {
+      display: inline-block;
+      width: 20%;
+      margin-right: 4.5%;
+      border-top: 3px solid white;
+      padding: 10px 0;
+      color: white;
+      font-family: Montserrat, sans-serif; }
+      header .points .item .number {
+        display: inline-block;
+        color: white;
+        font-weight: 700;
+        font-size: 1.4em;
+        width: 20px; }
+      header .points .item a {
+        text-transform: uppercase; }
+      header .points .item a:hover {
+        color: #f38181; }
+
+.about_us {
+  margin-bottom: 60px; }
+  .about_us .images {
+    margin: 60px auto; }
+    .about_us .images .column img {
+      width: 100%; }
+
+.facts {
+  background: #95e1d3;
+  padding-top: 60px; }
+  .facts .col-md-2 {
+    width: 20%; }
+  .facts .number {
+    color: white;
+    font-weight: 700;
+    font-size: 4em;
+    text-align: center;
+    font-family: Montserrat, sans-serif; }
+  .facts .text {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7em; }
+
+.service .item {
+  display: inline-block; }
+  .service .item .description {
+    display: inline-block; }
+    .service .item .description h3 {
+      text-transform: uppercase;
+      font-size: 0.75em;
+      font-weight: 700; }
+
+.features {
+  background: url(img/bg2.png) 50% 50% no-repeat; }
+
+/* Media queries */
+/*PHONE*/
+@media all and (max-width: 767px) {
+  .container {
+    max-width: 730px; } }
+/*TABLETS*/
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 95%; } }
+/*MEDIUM DEVICE*/
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 100%; } }
+/*LARGE DEVICE*/
+@media all and (min-width: 1201px) {
+  .container {
+    width: 95%; } }
+
+/*# sourceMappingURL=style.css.map */
