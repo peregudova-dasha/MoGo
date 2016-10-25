@@ -1,163 +1,642 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300i,400");
 * {
   color: #333333;
-  font-family: Montserrat, sans-serif; }
-  * .container {
-    padding: 0 7%;
-    width: 100%; }
-  * h1, * h2 {
-    font-family: Montserrat, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase; }
-  * h2 {
-    text-align: center;
-    margin: 0 auto;
-    color: #333333; }
-  * .text {
-    color: #999999;
-    text-align: center;
-    padding: 10px 15%;
-    font-family: Roboto, sans-serif; }
-  * p {
-    color: #999999;
-    font-family: Roboto, sans-serif; }
-  * a {
-    color: inherit; }
-  * a:hover {
-    text-decoration: none; }
-  * .line {
-    margin: 35px auto;
-    width: 50px;
-    height: 2px;
-    background: #f38181; }
-  * .title {
-    display: block;
-    margin: 100px auto 25px auto; }
+  font-family: Montserrat, sans-serif;
+  /*********** BUTTONS ***********/
+}
+* .container {
+  padding: 0 7%;
+  width: 100%;
+}
+* h1, * h2, * h3 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+* h2 {
+  text-align: center;
+  margin: 0 auto;
+  color: #333333;
+}
+* .text {
+  color: #999999;
+  text-align: center;
+  padding: 10px 15% 50px 15%;
+  font-family: Roboto, sans-serif;
+}
+* p {
+  color: #999999;
+  font-family: Roboto, sans-serif;
+}
+* a {
+  color: inherit;
+}
+* a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+* .line {
+  margin: 35px auto;
+  width: 50px;
+  height: 2px;
+  background: #f38181;
+}
+* .title {
+  display: block;
+  margin: 100px auto 25px auto;
+}
+* .underline {
+  margin: 0 auto;
+  width: 0%;
+  height: 3px;
+  background: #fce38a;
+}
+* .carousel {
+  margin: 50px auto;
+  width: 80vw;
+}
+* .carousel-wrapper {
+  margin: 10px 5vw;
+  /* отступы для стрелок */
+  overflow: hidden;
+  /* скрываем содержимое, выходящее за рамки основной области */
+  position: relative;
+}
+* .carousel-items {
+  width: 10000px;
+  /* устанавливаем большую ширину для набора элементов */
+  position: relative;
+  /* позиционируем блок относительно основной области карусели */
+}
+* .carousel-block {
+  float: left;
+  /* выстраиваем все элементы карусели в ряд */
+  width: 70vw;
+  /* задаём ширину каждого элемента */
+  height: 100%;
+  overflow: hidden;
+  padding: 2vw;
+  /* делаем оступы, чтобы элементы не сливались */
+}
+* .carousel-block .cite {
+  display: block;
+}
+* .carousel-block .cite .comment_cite {
+  width: 100%;
+}
+* .carousel-block .cite p {
+  font-size: 1em;
+  font-style: italic;
+}
+* .carousel-block .cite .line {
+  display: inline-block;
+  margin: 0;
+}
+* .carousel-button-left, * .carousel-button-right {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
+}
+* .carousel-button-left {
+  float: left;
+  background: url("https://github.com/peregudova-dasha/MoGo/blob/gh-pages/img/arrow_down.png?raw=true") no-repeat 50% 50%;
+  transform: rotate(90deg);
+}
+* .carousel-button-right {
+  float: right;
+  background: url("https://github.com/peregudova-dasha/MoGo/blob/gh-pages/img/arrow_down.png?raw=true") no-repeat 50% 50%;
+  transform: rotate(270deg);
+}
 
 header {
   width: 100%;
   height: 100%;
-  background: url("img/bg1.png") 50% 50% no-repeat;
+  background: url("https://github.com/peregudova-dasha/MoGo/blob/gh-pages/img/bg1.png?raw=true") 50% 50% no-repeat;
   background-size: cover;
-  padding: 10px auto; }
-  header .navbar {
-    background: none;
-    border: none; }
-    header .navbar .logo {
-      width: 70px; }
-    header .navbar .navbar-right li {
-      font-family: Montserrat, sans-serif;
-      text-transform: uppercase; }
-      header .navbar .navbar-right li a {
-        color: white; }
-      header .navbar .navbar-right li a:hover {
-        color: #fce38a; }
-    header .navbar .navbar-right li:nth-child(6) a {
-      width: 52px; }
-    header .navbar .navbar-right li:nth-child(6) img {
-      width: 20px; }
-    header .navbar .navbar-right li:nth-child(7) a {
-      width: 52px; }
-    header .navbar .navbar-right li:nth-child(7) img {
-      width: 20px; }
-  header .h2 {
-    margin: 150px auto 10px auto; }
-  header img {
-    width: 25%;
-    display: block; }
-  header h1 {
-    margin: 0 auto 40px auto;
-    text-align: center;
-    width: 50%;
-    font-size: 7em;
-    color: white; }
-  header .line {
-    background: white; }
-  header .button {
-    display: block;
-    text-align: center;
-    width: 120px;
-    height: 30px;
-    border: 3px solid white;
-    color: white;
-    margin: 50px auto;
-    padding-top: 5px;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    font-family: Montserrat, sans-serif; }
-  header .points {
-    margin: 100px auto 10px auto; }
-    header .points .item {
-      display: inline-block;
-      width: 20%;
-      margin-right: 4.5%;
-      border-top: 3px solid white;
-      padding: 10px 0;
-      color: white;
-      font-family: Montserrat, sans-serif; }
-      header .points .item .number {
-        display: inline-block;
-        color: white;
-        font-weight: 700;
-        font-size: 1.4em;
-        width: 20px; }
-      header .points .item a {
-        text-transform: uppercase; }
-      header .points .item a:hover {
-        color: #f38181; }
+  padding: 10px auto;
+}
+header .navbar {
+  background: none;
+  border: none;
+}
+header .navbar .logo {
+  width: 70px;
+}
+header .navbar .navbar-right li {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+}
+header .navbar .navbar-right li a {
+  color: white;
+  padding-bottom: 5px;
+}
+header .navbar .navbar-right li a:hover {
+  color: #fce38a;
+}
+header .navbar .navbar-right li .underline {
+  margin: 0 auto;
+  width: 0%;
+  height: 3px;
+  background: #fce38a;
+}
+header .navbar .navbar-right li:nth-child(6) a {
+  width: 52px;
+}
+header .navbar .navbar-right li:nth-child(6) img {
+  width: 20px;
+}
+header .navbar .navbar-right li:nth-child(7) a {
+  width: 52px;
+}
+header .navbar .navbar-right li:nth-child(7) img {
+  width: 20px;
+}
+header .h2 {
+  margin: 150px auto 10px auto;
+}
+header img {
+  width: 25%;
+  display: block;
+}
+header h1 {
+  margin: 0 auto 40px auto;
+  text-align: center;
+  width: 50%;
+  font-size: 7em;
+  color: white;
+}
+header .line {
+  background: white;
+}
+header .button {
+  display: block;
+  text-align: center;
+  width: 120px;
+  height: 30px;
+  border: 3px solid white;
+  color: white;
+  margin: 50px auto;
+  padding-top: 5px;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-family: Montserrat, sans-serif;
+}
+header .points {
+  margin: 100px auto 10px auto;
+}
+header .points .item {
+  display: inline-block;
+  width: 20%;
+  margin-right: 4.5%;
+  padding: 10px 0;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  border-top: 3px solid white;
+}
+header .points .item .number {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  font-size: 1.4em;
+  width: 20px;
+}
+header .points .item a {
+  text-transform: uppercase;
+}
 
 .about_us {
-  margin-bottom: 60px; }
-  .about_us .images {
-    margin: 60px auto; }
-    .about_us .images .column img {
-      width: 100%; }
+  margin-bottom: 60px;
+}
+.about_us .images {
+  margin: 30px auto 60px auto;
+}
+.about_us .images .column {
+  padding: 0;
+  margin: 0 0.91%;
+  width: 31.5%;
+}
+.about_us .images .img img {
+  width: 100%;
+}
 
 .facts {
   background: #95e1d3;
-  padding-top: 60px; }
-  .facts .col-md-2 {
-    width: 20%; }
-  .facts .number {
-    color: white;
-    font-weight: 700;
-    font-size: 4em;
-    text-align: center;
-    font-family: Montserrat, sans-serif; }
-  .facts .text {
-    color: white;
-    text-transform: uppercase;
-    font-size: 0.7em; }
+  padding-top: 60px;
+}
+.facts .col-md-2 {
+  width: 20%;
+}
+.facts .number {
+  color: white;
+  font-weight: 700;
+  font-size: 4em;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+.facts .text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  padding-bottom: 30px;
+}
 
+.service {
+  padding-bottom: 20px;
+}
 .service .item {
-  display: inline-block; }
-  .service .item .description {
-    display: inline-block; }
-    .service .item .description h3 {
-      text-transform: uppercase;
-      font-size: 0.75em;
-      font-weight: 700; }
+  display: inline-block;
+}
+.service .item .description {
+  margin-bottom: 50px;
+}
+.service .item .description h3 {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 700;
+  margin-top: 0;
+}
 
 .features {
-  background: url(img/bg2.png) 50% 50% no-repeat; }
+  background: url(https://github.com/peregudova-dasha/MoGo/blob/gh-pages/img/bg2.png?raw=true) no-repeat;
+  background-size: cover;
+}
+.features .ipad {
+  text-align: center;
+}
+.features .iphone {
+  position: absolute;
+  margin-top: -370px;
+  padding-left: 52%;
+}
+
+.service2 {
+  padding-bottom: 100px;
+}
+.service2 .img img {
+  width: 100%;
+}
+.service2 .title_panel {
+  padding: 10px 0;
+  border: 2px solid #f1f1f1;
+}
+.service2 .title_panel .container {
+  padding: 0;
+  width: 100%;
+}
+.service2 .title_panel h4 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.service2 .title_panel .button {
+  float: right;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.service2 .content {
+  display: none;
+  font-size: 0.95em;
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+  padding: 15px 35px 15px 15px;
+  border: 2px solid #f1f1f1;
+  margin-top: -2px;
+  overflow: auto;
+  height: 150px;
+}
+.service2 .active {
+  display: block;
+}
+.service2 .rotate {
+  transform: rotate(-180deg);
+}
+.service2 ::-webkit-scrollbar-track {
+  background-color: #f8f8f8;
+}
+.service2 ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #95e1d3;
+}
+.service2 ::-webkit-scrollbar {
+  width: 7px;
+}
+
+.quote {
+  background: #f8f8f8;
+}
+
+.team {
+  padding-bottom: 60px;
+}
+.team .members {
+  margin: 30px auto 60px auto;
+}
+.team .members .column {
+  padding: 0;
+  margin: 0 0.91%;
+  width: 31.5%;
+}
+.team .members .img img {
+  width: 100%;
+}
+
+.logos {
+  background: #f8f8f8;
+  padding: 60px 0;
+}
+
+.works .photo {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.works .column {
+  padding: 0;
+}
+.works .column img {
+  width: 100%;
+}
+
+.clients {
+  padding-bottom: 30px;
+  background: url(https://github.com/peregudova-dasha/MoGo/blob/gh-pages/img/bg2.png?raw=true) no-repeat;
+  background-size: cover;
+}
+.clients .container {
+  padding-bottom: 50px;
+}
+.clients .line2 {
+  margin: 0 0 20px 0;
+}
+.clients h3 {
+  font-size: 1em;
+  margin-top: 0;
+}
+.clients .about {
+  padding-left: 40px;
+}
+.clients .cite {
+  font-style: italic;
+}
+
+.blog {
+  padding-bottom: 60px;
+}
+.blog h3 {
+  font-size: 1em;
+}
+.blog .blog_img img {
+  width: 100%;
+  z-index: 1;
+}
+.blog .date {
+  z-index: 10;
+  position: absolute;
+  top: 38%;
+  left: 5px;
+  padding-top: 3px;
+  width: 60px;
+  height: 60px;
+  background: #95e1d3;
+}
+.blog .date .day, .blog .date .month {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.blog .date .day {
+  font-size: 1.5em;
+}
+.blog p {
+  padding-right: 30px;
+  font-size: 0.8em;
+}
+.blog .blog_item .view, .blog .blog_item .comment {
+  display: inline-block;
+}
+.blog .blog_item .view img, .blog .blog_item .view p, .blog .blog_item .comment img, .blog .blog_item .comment p {
+  display: inline-block;
+}
+
+.map {
+  height: 200px;
+  background: url("https://github.com/peregudova-dasha/MoGo/blob/gh-pages/img/map.jpg?raw=true") no-repeat 50% 10%;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.open-map {
+  position: absolute;
+  text-align: center;
+  margin: -140px 44vw;
+}
+.open-map h3 {
+  color: #f38181;
+  font-size: 1.3em;
+  margin: 15px auto;
+}
+.open-map .line {
+  margin: 15px auto;
+}
+
+footer {
+  background: #f8f8f8;
+  padding: 60px 0 0 0;
+}
+footer .text {
+  text-align: left;
+  padding: 0;
+}
+footer .logo {
+  padding-bottom: 20px;
+}
+footer .followers {
+  text-transform: uppercase;
+  margin: 25px 0 15px 0;
+  font-size: 1em;
+}
+footer .social {
+  padding-top: 20px;
+  border-top: 1px solid #999999;
+}
+footer .social p {
+  display: inline-block;
+}
+footer .social img {
+  display: inline-block;
+  margin: 0 5px;
+}
+footer h3 {
+  text-transform: none;
+  margin: 0 0 20px 0;
+}
+footer h4 {
+  font-size: 1em;
+}
+footer .blog_container {
+  padding: 0;
+  margin: 15px 0;
+}
+footer .blog_img {
+  padding: 0;
+  margin: 0;
+}
+footer .blog_img img {
+  width: 100%;
+}
+footer .blog_info h5 {
+  font-size: 0.75em;
+  margin: 0;
+  text-transform: uppercase;
+}
+footer .blog_info .date {
+  font-size: 0.85em;
+  color: #999999;
+  margin: 10px 0;
+}
+footer .instagram .column {
+  padding: 0;
+  margin: 0;
+}
+footer .instagram .column img {
+  width: 100%;
+}
+footer .end {
+  margin: 50px auto 15px auto;
+  text-align: center;
+  font-size: 0.8em;
+  border-top: 1px solid #999999;
+  padding-top: 15px;
+}
 
 /* Media queries */
 /*PHONE*/
 @media all and (max-width: 767px) {
-  .container {
-    max-width: 730px; } }
+  header .navbar-default .navbar-toggle {
+    border-color: white;
+    border-radius: 30px;
+    padding: 8.5px;
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+  }
+  header .navbar-default .navbar-toggle .icon-bar {
+    background: white;
+  }
+  header img {
+    width: 70%;
+  }
+  header h1 {
+    font-size: 4em;
+    width: 90%;
+  }
+  header .points .item {
+    width: 22%;
+    font-size: 0.65em;
+    margin-right: 2%;
+  }
+  header .points .item .number {
+    width: 10px;
+  }
+
+  .about_us .images .column .hover {
+    display: none;
+  }
+
+  .facts .number {
+    font-size: 2em;
+  }
+  .facts .text {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .features .ipad {
+    width: 100%;
+  }
+  .features .ipad img {
+    width: inherit;
+  }
+  .features .iphone {
+    display: none;
+  }
+
+  .team .members .column {
+    width: 100%;
+  }
+  .team .members .column img {
+    margin: 10px auto;
+  }
+
+  .logos img {
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+  }
+
+  .clients .photo img {
+    width: 20vw;
+  }
+
+  .blog .date {
+    top: 0;
+    left: 0;
+  }
+
+  .service2 .col-xs-9 {
+    width: 70%;
+  }
+  .service2 .col-xs-1 {
+    padding: 2px;
+  }
+}
 /*TABLETS*/
 @media all and (min-width: 768px) and (max-width: 991px) {
-  .container {
-    width: 95%; } }
+  header img {
+    width: 70%;
+  }
+  header h1 {
+    font-size: 6em;
+    width: 90%;
+  }
+
+  .service2 .col-sm-9 {
+    width: 74%;
+  }
+  .service2 .col-sm-1 {
+    padding: 0 5px;
+  }
+
+  footer .social p {
+    display: block;
+  }
+  footer .social a img {
+    margin: 0 3px;
+  }
+
+  .logos img {
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+  }
+}
 /*MEDIUM DEVICE*/
 @media all and (min-width: 992px) and (max-width: 1200px) {
   .container {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 /*LARGE DEVICE*/
 @media all and (min-width: 1201px) {
   .container {
-    width: 95%; } }
-
-/*# sourceMappingURL=style.css.map */
+    width: 95%;
+  }
+}
