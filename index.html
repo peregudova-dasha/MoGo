@@ -19,14 +19,13 @@
   </head>
   <body>
     
-
- <header>
+<header>
     <div class="container">
     <div class="menu">
       
             <nav class="navbar navbar-default">
              <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
+           
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -37,21 +36,21 @@
               <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+           
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"><img src="img/basket.png" alt="icon"></a></li>
-                <li><a href="#"><img src="img/search.png" alt="icon"></a></li>
+                <li><a href="#">About</a><div class="underline"></div></li>
+                <li><a href="#">Service</a><div class="underline"></div></li>
+                <li><a href="#">Work</a><div class="underline"></div></li>
+                <li><a href="#">Blog</a><div class="underline"></div></li>
+                <li><a href="#">Contact</a><div class="underline"></div></li>
+                <li><a href="#"><img src="img/basket.png" alt="icon"></a><div class="underline"></div></li>
+                <li><a href="#"><img src="img/search.png" alt="icon"></a><div class="underline"></div></li>
 
               </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+            </div>
+          </div>
         </nav>
 
     </div>
@@ -65,7 +64,7 @@
 
     <div class="points">
         <div class="item">
-            <div class="number">1</div>
+          <div class="number">1</div>
              <a href="#">intro</a>        
           </div>
          <div class="item">
@@ -84,23 +83,35 @@
     </div>
  </header>
 
-
-<div class="about_us container">
+<div class="about_us">
   <img src="img/what_we_do.png" alt="title" class="title">
   <h2>Story about us</h2>
   <div class="line"></div>
   <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eum amet aperiam deleniti quos consectetur, blanditiis ab vel, officiis at eos sapiente voluptatem excepturi assumenda perspiciatis distinctio minus molestias incidunt.</div>
-  <div class="images">
-    <div class="col-md-4 col-sm-4 col-xs-12 column">
-      <img src="img/img1.png" alt="photo">
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-12 column">
-      <img src="img/img2.png" alt="photo">
-    </div>
-    <div class="col-md-4 col-sm-4 col-xs-12 column">
-      <img src="img/img3.png" alt="photo">
-    </div>
-  </div>
+
+    <div class="images">
+        <div class="container">
+        <div class="col-md-4 col-sm-4 col-xs-12 column">
+          <div class="img">
+            <img src="img/img1.png" alt="img" />
+          </div>
+        </div>
+
+     <div class="col-md-4 col-sm-4 col-xs-12 column">
+          <div class="img">
+            <img src="img/img2.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12 column">
+          <div class="img">
+            <img src="img/img3.png" alt="img" />
+          </div>
+        </div>
+
+        </div>
+      </div>
+
 </div>
 
 <div class="facts">
@@ -140,15 +151,19 @@
 
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="item">
+            <div class="col-md-2 col-sm-2 col-xs-2">
             <img src="img/icon1.png" alt="icon">
-            <div class="description">
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-10 description">
               <h3>photography</h3>
               <p>Quidem suscipit alias doloribus possimus reiciendis provident earum consequuntur sequi dolores!</p>
             </div>
           </div>
            <div class="item">
+             <div class="col-md-2 col-sm-2 col-xs-2">
             <img src="img/icon2.png" alt="icon">
-            <div class="description">
+                </div>
+            <div class="description col-md-10 col-sm-10 col-xs-10 ">
               <h3>seo</h3>
               <p>Quidem suscipit alias doloribus possimus reiciendis provident earum consequuntur sequi dolores!</p>
             </div>
@@ -156,15 +171,19 @@
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="item">
+            <div class="col-md-2 col-sm-2 col-xs-2">
             <img src="img/icon3.png" alt="icon">
-            <div class="description">
+               </div>
+            <div class="description col-md-10 col-sm-10 col-xs-10">
               <h3>web design</h3>
               <p>debitis, autem nemo distinctio tempora quisquam sint maxime dolorum vel exercitationem. Minima.</p>
             </div>
           </div>
             <div class="item">
+              <div class="col-md-2 col-sm-2 col-xs-2">
             <img src="img/icon4.png" alt="icon">
-            <div class="description">
+                 </div>
+            <div class="description col-md-10 col-sm-10 col-xs-10">
               <h3>css/html</h3>
               <p>debitis, autem nemo distinctio tempora quisquam sint maxime dolorum vel exercitationem. Minima.</p>
             </div>
@@ -172,15 +191,19 @@
         </div>
         <div class="col-md-4 col-sm-4 col-xs-12">
           <div class="item">
+            <div class="col-md-2 col-sm-2 col-xs-2">
             <img src="img/icon5.png" alt="icon">
-            <div class="description">
+               </div>
+            <div class="description col-md-10 col-sm-10 col-xs-10">
               <h3>creativity</h3>
               <p>um veniam quo perferendis veritatis dolorum officia! Provident, molestiae repudiandae fuga harum consectetur.</p>
             </div>
           </div>
             <div class="item">
+              <div class="col-md-2 col-sm-2 col-xs-2">
             <img src="img/icon6.png" alt="icon">
-            <div class="description">
+           </div>
+            <div class="description col-md-10 col-sm-10 col-xs-10">
               <h3>digital</h3>
               <p>debitis, autem nemo distinctio tempora quisquam sint maxime dolorum vel exercitationem. Minima.</p>
             </div>
@@ -194,9 +217,13 @@
   <img src="img/for_all_devices.png" alt="title" class="title">
   <h2>unique design</h2>
   <div class="line"></div>
-  <img src="img/ipad.png" alt="ipad">
+    <div class="ipad">
+      <img src="img/ipad.png" alt="ipad" >
+    </div>
+    <div class="iphone">
   <img src="img/iphone.png" alt="iphone">
   </div>
+    </div>
 </div>
 
 <div class="service2">
@@ -206,19 +233,489 @@
     <div class="line"></div>
     <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum expedita consequatur, aperiam adipisci repellat. Culpa ullam molestias incidunt beatae dolore! Eum, nulla, dolor mollitia nihil velit eveniet aliquam delectus voluptatum.</div>
     
-    <div class="col-md-2 col-sm-2 col-xs-2">
+    <div class="col-md-6 col-sm-6 col-xs-12 img">
       <img src="img/img4.png" alt="img">
     </div>
-    <div class="col-md-2 col-sm-2 col-xs-2">
+    <div class="col-md-6 col-sm-6 col-xs-12">
+     <div class="show_panel">
+        <div class="title_panel">
+          <div class="container">
+
+             <div class="col-md-1 col-sm-1 col-xs-1">
+                <img src="img/icon7.png" alt="icon" class="icon"/>
+              </div>
+             <div class="col-md-9 col-sm-9 col-xs-9">
+                <h4>photography</h4>
+              </div>
+             <div class="col-md-2 col-sm-2 col-xs-2">
+                <img src="img/arrow_down.png" alt="icon" class="icon button"/>
+              </div>
+         </div>
+       </div>
+        <div class="content active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit repellat id, placeat? Reprehenderit nam similique, illum dolores impedit libero! Sit inventore est minima porro laboriosam ducimus quam incidunt architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit repellat id, placeat? Reprehenderit nam similique, illum dolores impedit libero! Sit inventore est minima porro laboriosam ducimus quam incidunt architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit repellat id, placeat? Reprehenderit nam similique, illum dolores impedit libero! Sit inventore est minima porro laboriosam ducimus quam incidunt architecto.</div>
+      </div>
       
+     <div class="show_panel">
+        <div class="title_panel">
+          <div class="container">
+
+             <div class="col-md-1 col-sm-1 col-xs-1">
+                <img src="img/icon8.png" alt="icon" class="icon"/>
+              </div>
+             <div class="col-md-9 col-sm-9 col-xs-9">
+                <h4>creativity</h4>
+              </div>
+             <div class="col-md-2 col-sm-2 col-xs-2">
+                <img src="img/arrow_down.png" alt="icon" class="icon button"/>
+              </div>
+         </div>
+       </div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit repellat id, placeat? Reprehenderit nam similique, illum dolores impedit libero! Sit inventore est minima porro laboriosam ducimus quam incidunt architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit repellat id, placeat? Reprehenderit nam similique, illum dolores impedit libero! Sit inventore est minima porro laboriosam ducimus quam incidunt architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit repellat id, placeat? Reprehenderit nam similique, illum dolores impedit libero! Sit inventore est minima porro laboriosam ducimus quam incidunt architecto.</div>
+      </div>
+      
+     <div class="show_panel">
+        <div class="title_panel">
+          <div class="container">
+
+             <div class="col-md-1 col-sm-1 col-xs-1">
+                <img src="img/icon9.png" alt="icon" class="icon"/>
+              </div>
+             <div class="col-md-9 col-sm-9 col-xs-9">
+                <h4>web design</h4>
+              </div>
+             <div class="col-md-2 col-sm-2 col-xs-2">
+                <img src="img/arrow_down.png" alt="icon" class="icon button"/>
+              </div>
+         </div>
+       </div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit repellat id, placeat? Reprehenderit nam similique, illum dolores impedit libero! Sit inventore est minima porro laboriosam ducimus quam incidunt architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit repellat id, placeat? Reprehenderit nam similique, illum dolores impedit libero! Sit inventore est minima porro laboriosam ducimus quam incidunt architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque impedit repellat id, placeat? Reprehenderit nam similique, illum dolores impedit libero! Sit inventore est minima porro laboriosam ducimus quam incidunt architecto.</div>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="quote">
-  <img src="img/" alt="" class="quote">
+ <div class="container">
+    <div class="carousel"> 
+      <div class="carousel-button-left"></div> 
+      <div class="carousel-button-right"></div> 
+      <div class="carousel-wrapper"> 
+       <div class="carousel-items"> 
+          <div class="carousel-block">
+           
+            <div class="cite">
+              <div class="col-md-2 col-sm-2 hidden-xs">
+                <img src="img/quote.png" alt="cite" class="comment_cite" />
+              </div>
+              <div class="col-md-10 col-sm-10 col-xs-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, animi! Adipisci laudantium itaque repellat aliquam vel. Maiores corporis, quibusdam, ducimus hic autem numquam fuga architecto omnis labore similique mollitia! Quae.</p>
+                <div class="line"></div>
+                <img src="img/Jon_Doe.png" alt="" />
+              </div>
+            </div>
+
+        </div>
+          <div class="carousel-block">
+           
+            <div class="cite">
+              <div class="col-md-2 col-sm-2 hidden-xs">
+                <img src="img/quote.png" alt="cite" class="comment_cite" />
+              </div>
+              <div class="col-md-10 col-sm-10 col-xs-12">
+                <p> Hic, animi! Adipisci laudantium itaque repellat aliquam vel. Maiores corporis, quibusdam, ducimus hic autem numquam fuga architecto omnis labore similique mollitia! </p>
+                <div class="line"></div>
+                <img src="img/Jon_Doe.png" alt="" />
+              </div>
+            </div>
+
+        </div>
+      
+      </div>
+    </div>
+  </div>
 
 </div>
+
+</div>
+
+<div class="team">
+    <div class="container">
+    <img src="img/who_we_are.png" alt="title" class="title" />
+      <h2>Meet our team</h2>
+      <div class="line"></div>
+      <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sint, pariatur. Laborum voluptatibus ipsum magni voluptatum tempora facere, vitae nihil reiciendis velit voluptate, est sit rem debitis fugiat sapiente voluptas.</div>
+    </div>
+  
+    <div class="members">
+        <div class="container">
+        <div class="col-md-4 col-sm-4 column col-xs-12">
+          <div class="img">
+            <img src="img/man1_03.png" alt="img" />
+          </div>
+        </div>
+
+     <div class="col-md-4 col-sm-4 col-xs-12 column">
+          <div class="img">
+            <img src="img/man2.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12 column">
+          <div class="img">
+            <img src="img/man3.png" alt="img" />
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+</div>
+
+<div class="logos">
+  <div class="container">
+    <div class="col-md-2 col-sm-4 col-xs-12">
+      <img src="img/logo2.png" alt="logotypes" class="logotypes" />
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-12">
+      <img src="img/logo3.png" alt="logotypes" class="logotypes" />
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-12">
+      <img src="img/logo4.png" alt="logotypes" class="logotypes" />
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-12">
+      <img src="img/logo5.png" alt="logotypes" class="logotypes" />
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-12">
+      <img src="img/logo6.png" alt="logotypes" class="logotypes" />
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-12">
+      <img src="img/logo7.png" alt="logotypes" class="logotypes" />
+    </div>
+    
+  </div>
+</div>
+
+<div class="works">
+    <img src="img/what_we_do.png" alt="title" class="title" />
+    <h2>some of our works</h2>
+    <div class="line"></div>
+    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nam tenetur officia at! Alias dolorum cumque sed, dolorem nisi molestias itaque, autem ad dignissimos, sit magni, eum rem aperiam quis?</div>
+  
+  <div class="container photo">
+    <div class="col-md-3 col-sm-3 col-xs-6 column">
+      <img src="img/work1.png" alt="photo" />
+      <div class="hover"></div>
+      <img src="img/work2.png" alt="photo" />
+    </div>
+    
+     <div class="col-md-3 col-sm-3 col-xs-6 column">
+      <img src="img/work3.png" alt="photo" />
+       <img src="img/work4_03.png" alt="photo" />
+      </div>
+    
+     <div class="col-md-3 col-sm-3 col-xs-6 column">
+       <img src="img/work5.png" alt="photo" />
+    </div>
+    
+     <div class="col-md-3 col-sm-3 col-xs-6 column">
+      <img src="img/work6.png" alt="photo" />
+      <img src="img/work7.png" alt="photo" />
+    </div>
+    
+  </div>
+</div>
+
+<div class="quote2">
+ <div class="container">
+    <div class="carousel"> 
+      <div class="carousel-button-left"></div> 
+      <div class="carousel-button-right"></div> 
+      <div class="carousel-wrapper"> 
+       <div class="carousel-items"> 
+          <div class="carousel-block">
+           
+            <div class="cite">
+              <div class="col-md-2 col-sm-2 hidden-xs">
+                <img src="img/cite.png" alt="cite" class="comment_cite" />
+              </div>
+              <div class="col-md-10 col-sm-10 col-xs-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, animi! Adipisci laudantium itaque repellat aliquam vel. Maiores corporis, quibusdam, ducimus hic autem numquam fuga architecto omnis labore similique mollitia! Quae.</p>
+                <div class="line"></div>
+                <img src="img/Joshue_Earle.png" alt="" />
+              </div>
+            </div>
+
+        </div>
+          <div class="carousel-block">
+           
+            <div class="cite">
+              <div class="col-md-2 col-sm-2 hidden-xs">
+                <img src="img/cite.png" alt="cite" class="comment_cite" />
+              </div>
+              <div class="col-md-10 col-sm-10 col-xs-12">
+                <p> Hic, animi! Adipisci laudantium itaque repellat aliquam vel. Maiores corporis, quibusdam, ducimus hic autem numquam fuga architecto omnis labore similique mollitia! </p>
+                <div class="line"></div>
+                <img src="img/Joshue_Earle.png" alt="" />
+              </div>
+            </div>
+
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<div class="clients">
+  <div class="container">
+  <img src="img/happy_clients.png" alt="title" class="title" />
+  <h2>what people say</h2>
+  <div class="line"></div>
+  </div>
+  
+  <div class="container">
+    <div class="col-md-6 col-sm-6 col-xs-12">
+    
+    <div class="photo col-md-3 col-sm-3 col-xs-3">
+      <img src="img/client1.png?" alt="client" class="client" />
+    </div>
+    <div class="about col-md-9 col-sm-9 col-xs-9">
+    <h3>Name</h3>
+    <p>position</p>
+    <div class="line line2"></div>
+    <p class="cite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum placeat odit voluptatum nihil, modi tempora tempore autem in explicabo</p>
+
+    </div>
+  </div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+    
+    <div class="photo col-md-3 col-sm-3 col-xs-3">
+      <img src="img/client2.png" alt="client" class="client" />
+    </div>
+    <div class="about col-md-9 col-sm-9 col-xs-9">
+    <h3>Name</h3>
+    <p>position</p>
+    <div class="line line2"></div>
+    <p class="cite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum placeat odit voluptatum nihil, modi tempora tempore autem in explicabo</p>
+
+    </div>
+  </div>    
+  </div>
+  
+    <div class="container">
+    <div class="col-md-6 col-sm-6 col-xs-12">
+    
+    <div class="photo col-md-3 col-sm-3 col-xs-3">
+      <img src="img/client3.png" alt="client" class="client" />
+    </div>
+    <div class="about col-md-9 col-sm-9 col-xs-9">
+    <h3>Name</h3>
+    <p>position</p>
+    <div class="line line2"></div>
+    <p class="cite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum placeat odit voluptatum nihil, modi tempora tempore autem in explicabo</p>
+
+    </div>
+  </div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+    
+    <div class="photo col-md-3 col-sm-3 col-xs-3">
+      <img src="img/client4.png" alt="client" class="client" />
+    </div>
+    <div class="about col-md-9 col-sm-9 col-xs-9">
+    <h3>Name</h3>
+    <p>position</p>
+    <div class="line line2"></div>
+    <p class="cite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum placeat odit voluptatum nihil, modi tempora tempore autem in explicabo</p>
+
+    </div>
+  </div>    
+  </div>
+  
+</div>
+
+<div class="blog">
+  <div class="container">
+  <img src="img/our_stories.png" alt="title" class="title" />
+  <h2>latest blog</h2>
+  <div class="line"></div>
+    
+    <a href="#">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="blog_img">
+    <img src="img/blog1.png" alt="blog"/>
+        <div class="date">
+          <div class="day">15</div>
+          <div class="month">july</div>
+        </div>
+      </div>
+      <h3>title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat tempora magni nemo velit tenetur quae, accusantium maiores libero dolorum modi beatae ad nobis aut possimus alias!</p>
+      <div class="blog_item">
+        <div class="view">  
+          <img src="img/view.png" alt="view"/>
+          <p>45465</p>
+        </div>
+      <div class="comment">
+    <img src="img/comment.png" alt="comment"/>
+        <p>896</p>
+       </div>
+       </div>
+    </div>
+    </a>
+    <a href="#">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="blog_img">
+    <img src="img/blog2.png" alt="blog"/>
+        <div class="date">
+          <div class="day">15</div>
+          <div class="month">july</div>
+        </div>
+      </div>
+      <h3>title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat tempora magni nemo velit tenetur quae, accusantium maiores libero dolorum modi beatae ad nobis aut possimus alias!</p>
+      <div class="blog_item">
+        <div class="view">  
+          <img src="img/view.png" alt="view"/>
+          <p>45465</p>
+        </div>
+      <div class="comment">
+    <img src="img/comment.png" alt="comment"/>
+        <p>896</p>
+       </div>
+       </div>
+    </div>
+    </a>
+    <a href="#">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+      <div class="blog_img">
+    <img src="img/blog3.png" alt="blog"/>
+        <div class="date">
+          <div class="day">12</div>
+          <div class="month">july</div>
+        </div>
+      </div>
+      <h3>title</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat tempora magni nemo velit tenetur quae, accusantium maiores libero dolorum modi beatae ad nobis aut possimus alias!</p>
+      <div class="blog_item">
+        <div class="view">  
+          <img src="img/view.png" alt="view"/>
+          <p>45465</p>
+        </div>
+      <div class="comment">
+    <img src="img/comment.png" alt="comment"/>
+        <p>896</p>
+       </div>
+       </div>
+    </div>
+    </a>
+    
+  </div>
+</div>
+
+
+<div class="map"></div>
+<div class="open-map">
+  <img src="img/map_03.png" alt="map" />
+  <a href="#"><h3>open map</h3></a>
+  <div class="line"></div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <h3>MoGo</h3>
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates temporibus qui a fugit aliquam est aspernatur quod, impedit doloribus sint ipsa voluptate libero amet magnam, sequi praesentium reiciendis assumenda provident.</div>
+      
+      <div class="followers">15K followers</div>
+      
+      <div class="social">
+      <p>Follow us:</p>
+        <a href="#"><img src="img/soc1.png" alt="social" /></a>
+        <a href="#"><img src="img/soc2.png" alt="social" /></a>
+        <a href="#"><img src="img/soc3.png" alt="social" /></a>
+        <a href="#"><img src="img/soc4.png" alt="social" /></a>
+        <a href="#"><img src="img/soc5.png" alt="social" /></a>
+        <a href="#"><img src="img/soc6.png" alt="social" /></a>
+        <a href="#"><img src="img/soc7.png" alt="social" /></a>
+        <a href="#"><img src="img/soc8.png" alt="social" /></a>
+        
+        
+      </div>
+      
+    </div>
+    
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <h4>Blogs</h4>
+      <a href="#">
+        <div class="container blog_container">
+      <div class="col-md-4 col-sm-4 col-xs-4 blog_img">
+        <img src="img/img15.png" alt="blog" />
+      </div>
+      <div class="col-md-8 col-sm-8 col-xs-8 blog_info">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+        <div class="date">March, 2016</div>
+      </div>
+      </div>
+      </a>
+      
+      <a href="#">
+        <div class="container blog_container">
+      <div class="col-md-4 col-sm-4 col-xs-4 blog_img">
+        <img src="img/img16.png" alt="blog" />
+      </div>
+      <div class="col-md-8 col-sm-8 col-xs-8 blog_info">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+        <div class="date">March, 2016</div>
+      </div>
+      </div>
+      </a>
+      
+      <a href="#">
+        <div class="container blog_container">
+      <div class="col-md-4 col-sm-4 col-xs-4 blog_img">
+        <img src="img/img17.png" alt="blog" />
+      </div>
+      <div class="col-md-8 col-sm-8 col-xs-8 blog_info">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+        <div class="date">March, 2016</div>
+      </div>
+      </div>
+      </a>
+      
+    </div>
+    
+    <div class="col-md-4 col-sm-4 col-xs-12 instagram">
+      <div class="container insta_container">
+           <h4>Instagram</h4>
+        <div class="col-md-4 col-sm-4 col-xs-4 column">
+          <a href="#"><img src="img/img18.png" alt="img" /></a>
+          <a href="#"><img src="img/img19.png" alt="img" /></a>
+          <a href="#"><img src="img/img20.png" alt="img" /></a>
+        </div>
+        
+        <div class="col-md-4 col-sm-4 col-xs-4 column">
+          <a href="#"><img src="img/img21.png" alt="img" /></a>
+          <a href="#"><img src="img/img22.png" alt="img" /></a>
+          <a href="#"><img src="img/img23.png" alt="img" /></a>
+        </div>
+        
+        <div class="col-md-4 col-sm-4 col-xs-4 column">
+         <a href="#"> <img src="img/img24.png" alt="img" /></a>
+          <a href="#"><img src="img/img25.png" alt="img" /></a>
+          <a href="#"><img src="img/img26.png" alt="img" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+      <div class="end">
+        &copy; MoGo Design Template 
+      </div>
+  </div>
+</footer>
 
 
 
