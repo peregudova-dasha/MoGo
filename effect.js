@@ -23,6 +23,17 @@ $(".item").hover(
        $(this).stop().animate({color: "#fff", borderColor:"#fff"}).find(".number").stop().animate({"color": "#fff"})});
 //POINTS end
 
+//ABOUT US
+$(".about_us .column").hover(
+    function(){
+     $(this).find(".hover").stop().fadeIn()
+    }, 
+  function(){
+      $(this).find(".hover").stop().fadeOut()
+  }
+)
+//ABOUT US end
+
 //SERVICE2
 $(".service2 .title_panel").click(function(){
     $(this).next().slideToggle(400);
@@ -90,3 +101,24 @@ $(".blog_column").hover(
     }
 )
 //BLOG end
+
+//TEAM
+$(".team .column").hover(
+    function(){
+     $(this).find(".hover").stop().fadeIn()
+    }, 
+  function(){
+      $(this).find(".hover").stop().fadeOut()
+  }
+)
+
+$(".team .column .soc").hover(
+    function(){
+     $(this).stop().animate({backgroundColor: "#95e1d3"})
+    }, 
+  function(){
+      $(this).stop().animate({backgroundColor: "#fce38a"})
+  }
+)
+
+//TEAM end
