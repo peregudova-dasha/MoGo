@@ -81,4 +81,12 @@ $(document).on('mouseleave', '.carousel', function(){$(this).removeClass('hover'
 
 
 //CITE END
-
+//BLOG
+$(".blog_column").hover(
+    function(){
+      $(this).find(".date").stop().animate({backgroundColor:"#fce38a"})},
+    function(){
+      $(this).find(".date").stop().animate({backgroundColor:"#95e1d3"})
+    }
+)
+//BLOG end
